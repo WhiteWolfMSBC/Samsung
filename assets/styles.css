@@ -1,0 +1,154 @@
+body {
+    font-family: 'SamsungOne',arial,sans-serif;
+}
+
+
+.navbar-img{
+    width: 103px;
+    height: 55px;
+}
+.navbar-ul .Card_container{
+    text-align: center;
+}
+.navbar_txt:hover{
+    color: #f7f7f7;
+}
+.card-b{
+    display: none;
+    color: white;
+    margin-top: -125px;
+    text-align: center;
+}
+.card-img:hover + .card-b{
+    display: block;
+}
+
+.card{
+    overflow: hidden;
+    border: none;
+}
+.card > .card-img {
+    inset:0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 200ms;
+}
+.card:hover >.card-img + .card-b{
+    transform: scale(1.05);
+    display: block;
+}
+
+.Mobile-container_row {
+  background-image: url('Images/11.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Mobile-container{
+    position: relative;
+    text-align: center;
+}
+.Mobile-container_txt{
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar_text{
+  position: absolute;
+  bottom:900%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobile-container-txt1{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.table-container_td{
+    font-size: 26px;
+    font-weight: bolder;
+}
+.table-container_tr:hover{
+    border: 1px solid rgb(173, 171, 171);
+}
+.footer-container{
+    background-color: #2c292f;
+}
+
+/* Go to Top */
+
+.go-top {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    background-color: #029d9d;
+    padding: 10px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: -1;
+  }
+  
+  .go-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  
+  .go-top:is(:hover, :focus) {
+    transform: translateY(-25px);
+  }
+
+  
+  /* Pop Up Chat Button */
+
+.open-button {
+  border-radius: 50%;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 100px;
+  }
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  .form-container textarea:focus {
+    background-color: rgb(247, 243, 243);
+    outline: none;
+  }
+  
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
